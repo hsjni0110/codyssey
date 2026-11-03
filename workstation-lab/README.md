@@ -12,7 +12,7 @@ NGINX 기반 커스텀 이미지를 만들고 18080·18081 포트에서 웹 페�
 |---|---|
 | OS | macOS 27.0.1 |
 | Shell | 기본 셸 `/bin/zsh` — [추가 환경 점검](evidence/shell.log) |
-| 터미널 | VSCode 통합 터미널 (`TERM_PROGRAM=vscode`) — [확인 화면](evidence/terminal%20증거.png) |
+| 터미널 | VSCode 통합 터미널 (`TERM_PROGRAM=vscode`) — [확인 화면](evidence/terminal-vscode.png) |
 | Docker 클라이언트 | 29.4.0 |
 | Docker 엔진 | 29.4.0 |
 | 실행 환경 | OrbStack / aarch64 / overlay2 |
@@ -39,7 +39,7 @@ $ echo "$TERM_PROGRAM"
 vscode
 ```
 
-![TERM_PROGRAM 출력으로 확인한 VSCode 통합 터미널](evidence/terminal%20증거.png)
+![TERM_PROGRAM 출력으로 확인한 VSCode 통합 터미널](evidence/terminal-vscode.png)
 
 ## 2) 실행 방법
 
@@ -96,7 +96,7 @@ docker compose down
 | Compose | 서비스 실행·상태·로그·종료, 환경 변수로 포트 변경 실습 | [터미널 로그](evidence/manual-session.log) |
 | Git 설정 | 사용자 정보 설정 확인, 기본 브랜치 `main` 설정 | [설정·연결 로그](evidence/git-connection.log) |
 | GitHub 원격 연결 | `origin`의 `main` 브랜치 조회 성공 | [설정·연결 로그](evidence/git-connection.log) |
-| GitHub 로그인 | 로그인 상태의 저장소 화면 확인 | [GitHub 화면](evidence/github%20연동.png) |
+| GitHub 로그인 | 로그인 상태의 저장소 화면 확인 | [GitHub 화면](evidence/github-connection.png) |
 | VSCode GitHub 연동 | 로그인·저장소 연동 화면 추가 필요 | 미첨부 |
 
 로그는 터미널 색상·커서 제어 코드를 제거한 UTF-8 텍스트다. `$`로 시작하는 줄은 기록된 터미널 명령 제목이며 일부 인수가 생략되어 있다. 전체 실행 명령은 아래 재현용 명령 블록을 참고한다. 출력 발췌는 실습 로그를 기준으로 정리했다.
@@ -314,7 +314,7 @@ Git은 로컬 변경 이력을 관리하고 GitHub는 원격 저장소와 협업
 
 공개 저장소 `hsjni0110/codyssey`, `main` 브랜치, 업로드된 과제 폴더를 확인했다. 사진에는 로그인 계정 메뉴와 저장소 관리 메뉴가 보인다. 브라우저 로그인 증거는 이 사진이며, 로그의 GitHub CLI 미로그인 상태와는 별개다.
 
-![GitHub 로그인 상태와 codyssey 공개 저장소](evidence/github%20연동.png)
+![GitHub 로그인 상태와 codyssey 공개 저장소](evidence/github-connection.png)
 
 #### VSCode 연동 증거
 
