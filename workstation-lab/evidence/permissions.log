@@ -1,0 +1,6 @@
+권한 변경 추가 검증 — 2026-11-03T10:48:51.282494+09:00
+$ ls -ld practice/permissions
+drwx------@ 2 [USER]  staff  64 Nov  2 14:35 practice/permissions
+$ chmod 755 practice/permissions
+$ ls -ld practice/permissions
+drwxr-xr-x@ 2 [USER]  staff  64 Nov  2 14:35 practice/permissions
