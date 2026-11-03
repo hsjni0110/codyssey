@@ -12,7 +12,7 @@ NGINX 기반 커스텀 이미지를 만들고 18080·18081 포트에서 웹 페�
 |---|---|
 | OS | macOS 27.0.1 |
 | Shell | 기본 셸 `/bin/zsh` — [추가 환경 점검](evidence/shell.log) |
-| 터미널 | 수동 실습 당시 앱 이름 미기록 — 보완 필요 |
+| 터미널 | VSCode 통합 터미널 (`TERM_PROGRAM=vscode`) — [확인 화면](evidence/terminal%20증거.png) |
 | Docker 클라이언트 | 29.4.0 |
 | Docker 엔진 | 29.4.0 |
 | 실행 환경 | OrbStack / aarch64 / overlay2 |
@@ -29,6 +29,17 @@ Server=29.4.0 OS=OrbStack Architecture=aarch64 Driver=overlay2
 Docker Compose version v5.1.2
 ```
 
+
+### 터미널 앱 확인
+
+VSCode 통합 터미널에서 `TERM_PROGRAM` 값이 `vscode`로 출력됐다. 셸은 명령을 해석하는 프로그램이고, 터미널 앱은 그 셸의 입력과 출력을 보여주는 프로그램이다.
+
+```text
+$ echo "$TERM_PROGRAM"
+vscode
+```
+
+![TERM_PROGRAM 출력으로 확인한 VSCode 통합 터미널](evidence/terminal%20증거.png)
 
 ## 2) 실행 방법
 
@@ -65,7 +76,7 @@ docker compose down
 - [x] Git 사용자 정보·기본 브랜치 설정과 결과 기록
 - [x] GitHub 로그인 화면과 원격 저장소 연결 증거
 - [ ] VSCode GitHub 로그인·저장소 연동 화면 첨부
-- [ ] 수동 실습에 사용한 터미널 앱 이름 기록
+- [x] 터미널 앱 이름 확인과 출력 화면 첨부
 - [x] 트러블슈팅 두 건과 확인 결과 정리
 
 선택 과제는 단일 서비스 Compose, 운영 명령, 환경 변수 변경까지 수행했다. 멀티 컨테이너와 SSH 인증은 선택 과제의 남은 항목이다.
