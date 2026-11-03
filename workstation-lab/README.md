@@ -75,7 +75,7 @@ docker compose down
 - [x] 컨테이너 삭제 전후 볼륨 데이터 비교
 - [x] Git 사용자 정보·기본 브랜치 설정과 결과 기록
 - [x] GitHub 로그인 화면과 원격 저장소 연결 증거
-- [ ] VSCode GitHub 로그인·저장소 연동 화면 첨부
+- [x] VSCode GitHub 로그인·저장소 연동 화면 첨부
 - [x] 터미널 앱 이름 확인과 출력 화면 첨부
 - [x] 트러블슈팅 두 건과 확인 결과 정리
 
@@ -97,7 +97,7 @@ docker compose down
 | Git 설정 | 사용자 정보 설정 확인, 기본 브랜치 `main` 설정 | [설정·연결 로그](evidence/git-connection.log) |
 | GitHub 원격 연결 | `origin`의 `main` 브랜치 조회 성공 | [설정·연결 로그](evidence/git-connection.log) |
 | GitHub 로그인 | 로그인 상태의 저장소 화면 확인 | [GitHub 화면](evidence/github-connection.png) |
-| VSCode GitHub 연동 | 로그인·저장소 연동 화면 추가 필요 | 미첨부 |
+| VSCode GitHub 연동 | GitHub 계정 로그인과 열린 저장소·main 브랜치 확인 | [VSCode 화면](evidence/vscode-github-connection.png) |
 
 로그는 터미널 색상·커서 제어 코드를 제거한 UTF-8 텍스트다. `$`로 시작하는 줄은 기록된 터미널 명령 제목이며 일부 인수가 생략되어 있다. 전체 실행 명령은 아래 재현용 명령 블록을 참고한다. 출력 발췌는 실습 로그를 기준으로 정리했다.
 
@@ -318,7 +318,9 @@ Git은 로컬 변경 이력을 관리하고 GitHub는 원격 저장소와 협업
 
 #### VSCode 연동 증거
 
-과제의 최종 결과물에는 VSCode에서 GitHub 로그인과 저장소 연동을 완료한 증거도 포함된다. 현재 사진은 GitHub 웹 화면이다. VSCode 계정 메뉴의 GitHub 로그인 상태와 열린 저장소가 함께 보이는 캡처를 추가해야 이 항목까지 충족한다.
+VSCode 계정 메뉴에서 `hsjni0110 (GitHub)` 로그인을 확인했다. 같은 화면에 과제 파일과 `codyssey` 경로, `main` 브랜치가 보인다. 원격 저장소 연결은 [Git 설정·연결 로그](evidence/git-connection.log)에서 확인할 수 있다.
+
+![VSCode GitHub 로그인과 codyssey 저장소의 main 브랜치](evidence/vscode-github-connection.png)
 
 ## 6) 트러블슈팅
 
