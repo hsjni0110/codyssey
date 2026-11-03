@@ -4,51 +4,15 @@ NGINX 기반 커스텀 이미지를 만들고 18080·18081 포트에서 웹 페�
 
 실습 기록은 [터미널 로그](evidence/manual-session.log), 브라우저 접속 결과는 [18080 화면](evidence/port-18080.png)과 [18081 화면](evidence/port-18081.png)에 담았다.
 
-## 실행 방법
-
-OrbStack을 켠 뒤 과제 폴더에서 실행한다.
-
-```bash
-cd /Users/hanseokjin/Desktop/project/codyssey/workstation-lab
-docker compose up -d --build --wait
-curl -f http://localhost:18080/health
-```
-
-`ok`가 나오면 브라우저에서 <http://localhost:18080>에 접속한다.
-
-```bash
-docker compose ps
-docker compose logs --tail 20 web
-docker compose down
-```
-
-위 명령은 순서대로 상태 확인, 최근 로그 확인, 서비스 종료에 사용한다.
-
-## 수행 결과와 증거
-
-| 항목 | 확인 결과 | 증거 |
-|---|---|---|
-| 터미널 조작 | 폴더 이동, 파일 생성·읽기·복사·이름변경·이동·삭제 실습 | [터미널 로그](evidence/manual-session.log) |
-| 권한 | 파일 `600 → 644`, 디렉토리 `700 → 755` 확인 | [터미널 로그](evidence/manual-session.log), [권한 변경 로그](evidence/permissions.log) |
-| Docker 점검 | 클라이언트·엔진 버전과 OrbStack 연결 확인 | [터미널 로그](evidence/manual-session.log) |
-| 컨테이너 실행 | hello-world 출력, Ubuntu 내부 명령과 종료 상태 확인 | [터미널 로그](evidence/manual-session.log) |
-| 이미지 빌드와 운영 | 커스텀 이미지 빌드, 목록·로그·자원 사용량·헬스체크 확인 | [터미널 로그](evidence/manual-session.log) |
-| 포트 매핑 | 18080·18081에서 같은 웹 페이지 접속 | [18080 화면](evidence/port-18080.png), [18081 화면](evidence/port-18081.png) |
-| 바인드 마운트 | 응답 문구가 `mount-before → mount-after`로 변경 | [터미널 로그](evidence/manual-session.log) |
-| 볼륨 | 기존 컨테이너 삭제 후 `persistent-data` 재조회 | [터미널 로그](evidence/manual-session.log) |
-| Compose | 서비스 실행·상태·로그·종료, 환경 변수로 포트 변경 실습 | [터미널 로그](evidence/manual-session.log) |
-| Git 설정 | 제출용 설정 증거 보완 필요 | 아래 Git 설정 절 참고 |
-| GitHub·VSCode 연동 | 이번 작업 범위에서 제외 | — |
-
-로그에는 터미널 제어 문자가 포함되어 있다. 편집기에서 열거나 내려받아 결과를 확인한다. 아래 명령 블록은 실습을 다시 실행할 때 사용할 명령이며, 출력 발췌는 해당 로그를 기준으로 정리했다.
-
-## 실행 환경
+## 1) 실행 환경
 
 [터미널 로그](evidence/manual-session.log)에 기록된 버전이다.
 
 | 항목 | 값 |
 |---|---|
 | OS | macOS 27.0.1 |
+| Shell | 기본 셸 `/bin/zsh` — [추가 환경 점검](evidence/shell.log) |
+| 터미널 | 수동 실습 당시 앱 이름 미기록 — 보완 필요 |
 | Docker 클라이언트 | 29.4.0 |
 | Docker 엔진 | 29.4.0 |
 | 실행 환경 | OrbStack / aarch64 / overlay2 |
@@ -65,12 +29,80 @@ Server=29.4.0 OS=OrbStack Architecture=aarch64 Driver=overlay2
 Docker Compose version v5.1.2
 ```
 
-## 터미널 조작과 권한
+
+## 2) 실행 방법
+
+저장소를 내려받은 디렉토리에서 OrbStack을 켠 뒤 실행한다. 저장소 위치가 달라도 `workstation-lab` 안에서 같은 명령을 사용하면 된다.
+
+```bash
+cd workstation-lab
+docker compose up -d --build --wait
+curl -f http://localhost:18080/health
+```
+
+`ok`가 나오면 브라우저에서 <http://localhost:18080>에 접속한다.
+
+```bash
+docker compose ps
+docker compose logs --tail 20 web
+docker compose down
+```
+
+위 명령은 순서대로 상태 확인, 최근 로그 확인, 서비스 종료에 사용한다.
+
+## 3) 수행 체크리스트
+
+- [x] 터미널 기본 조작과 폴더 구성
+- [x] 파일·디렉토리 권한 변경과 전후 비교
+- [x] Docker 버전과 엔진 연결 점검
+- [x] hello-world와 Ubuntu 내부 명령 실행
+- [x] 컨테이너 종료와 exec 셸 종료 차이 확인
+- [x] Dockerfile 커스텀 이미지 빌드·실행
+- [x] 이미지·컨테이너 목록, 중지, 로그, 자원 사용량 확인
+- [x] 두 포트 접속과 주소창 포함 사진 첨부
+- [x] 바인드 마운트 변경 전후 비교
+- [x] 컨테이너 삭제 전후 볼륨 데이터 비교
+- [x] Git 사용자 정보·기본 브랜치 설정과 결과 기록
+- [x] GitHub 로그인 화면과 원격 저장소 연결 증거
+- [ ] VSCode GitHub 로그인·저장소 연동 화면 첨부
+- [ ] 수동 실습에 사용한 터미널 앱 이름 기록
+- [x] 트러블슈팅 두 건과 확인 결과 정리
+
+선택 과제는 단일 서비스 Compose, 운영 명령, 환경 변수 변경까지 수행했다. 멀티 컨테이너와 SSH 인증은 선택 과제의 남은 항목이다.
+
+## 4) 수행 결과와 증거
+
+| 항목 | 확인 결과 | 증거 |
+|---|---|---|
+| 터미널 조작 | 폴더 이동, 파일 생성·읽기·복사·이름변경·이동·삭제 실습 | [터미널 로그](evidence/manual-session.log) |
+| 권한 | 파일 `600 → 644`, 디렉토리 `700 → 755` 확인 | [터미널 로그](evidence/manual-session.log), [권한 변경 로그](evidence/permissions.log) |
+| Docker 점검 | 클라이언트·엔진 버전과 OrbStack 연결 확인 | [터미널 로그](evidence/manual-session.log) |
+| 컨테이너 실행 | hello-world 출력, Ubuntu 내부 명령과 종료 상태 확인 | [터미널 로그](evidence/manual-session.log) |
+| 이미지 빌드와 운영 | 커스텀 이미지 빌드, 목록·로그·자원 사용량·헬스체크 확인 | [터미널 로그](evidence/manual-session.log) |
+| 포트 매핑 | 18080·18081에서 같은 웹 페이지 접속 | [18080 화면](evidence/port-18080.png), [18081 화면](evidence/port-18081.png) |
+| 바인드 마운트 | 응답 문구가 `mount-before → mount-after`로 변경 | [터미널 로그](evidence/manual-session.log) |
+| 볼륨 | 기존 컨테이너 삭제 후 `persistent-data` 재조회 | [터미널 로그](evidence/manual-session.log) |
+| Compose | 서비스 실행·상태·로그·종료, 환경 변수로 포트 변경 실습 | [터미널 로그](evidence/manual-session.log) |
+| Git 설정 | 사용자 정보 설정 확인, 기본 브랜치 `main` 설정 | [설정·연결 로그](evidence/git-connection.log) |
+| GitHub 원격 연결 | `origin`의 `main` 브랜치 조회 성공 | [설정·연결 로그](evidence/git-connection.log) |
+| GitHub 로그인 | 로그인 상태의 저장소 화면 확인 | [GitHub 화면](evidence/github%20연동.png) |
+| VSCode GitHub 연동 | 로그인·저장소 연동 화면 추가 필요 | 미첨부 |
+
+로그는 터미널 색상·커서 제어 코드를 제거한 UTF-8 텍스트다. `$`로 시작하는 줄은 기록된 터미널 명령 제목이며 일부 인수가 생략되어 있다. 전체 실행 명령은 아래 재현용 명령 블록을 참고한다. 출력 발췌는 실습 로그를 기준으로 정리했다.
+
+
+## 5) 수행 로그와 검증
+
+### 터미널 조작과 권한
 
 파일은 `600`에서 `644`로 바뀌었다. 디렉토리는 대상 이름 오타로 `700`에 머물렀고, 추가 실습에서 올바른 이름으로 다시 실행해 `755`로 변경했다. 변경 전후는 [권한 변경 로그](evidence/permissions.log)에 기록했다.
 
 ```bash
+mkdir -p practice
 cd practice
+pwd
+ls -la
+mkdir -p permissions
 touch empty.txt
 echo "Hello terminal" > original.txt
 cat original.txt
@@ -106,7 +138,7 @@ drwx------@ ... permissions
 
 절대 경로 `/Users/hanseokjin/Desktop/project/codyssey/workstation-lab`은 루트(`/`)부터 위치를 지정한다. 상대 경로 `site/index.html`은 현재 디렉토리를 기준으로 파일을 찾는다.
 
-## 커스텀 이미지
+### 커스텀 이미지
 
 `nginx:stable-alpine`에 웹 페이지와 서버 설정을 추가했다. [Dockerfile](Dockerfile)이 이미지를 만들고, [NGINX 설정](nginx/default.conf.template)이 서버 포트와 `/health` 응답을 정한다.
 
@@ -125,7 +157,7 @@ docker images codyssey-web
 
 빌드 과정과 이미지 목록은 [터미널 로그](evidence/manual-session.log)에 있다. 이미지는 실행 파일과 설정을 묶은 템플릿이고, 컨테이너는 그 이미지로 만든 실행 인스턴스다.
 
-## 포트 매핑과 접속 결과
+### 포트 매핑과 접속 결과
 
 같은 이미지로 컨테이너 두 개를 실행하고 호스트 포트를 각각 18080·18081로 연결했다. 두 브라우저 화면에서 같은 페이지와 주소창의 포트를 확인할 수 있다.
 
@@ -138,11 +170,11 @@ curl -i http://localhost:18081/health
 
 `-p`는 `호스트주소:호스트포트:컨테이너포트` 순서다. 두 컨테이너 모두 내부 8080 포트를 쓰고, 호스트에서는 서로 다른 포트로 접근한다. `127.0.0.1`은 로컬 접속 주소다.
 
-### 18080 접속
+#### 18080 접속
 
 ![주소창 localhost:18080과 웹 페이지](evidence/port-18080.png)
 
-### 18081 접속
+#### 18081 접속
 
 ![주소창 localhost:18081과 웹 페이지](evidence/port-18081.png)
 
@@ -161,7 +193,7 @@ docker inspect --format '{{.State.Health.Status}}' codyssey-web-a
 healthy
 ```
 
-## 컨테이너 종료와 유지
+### 컨테이너 종료와 유지
 
 Ubuntu의 주 프로세스인 Bash에서 `exit`를 입력하면 컨테이너가 종료됐다. `sleep infinity`를 주 프로세스로 실행한 컨테이너는 `exec`로 들어간 Bash를 종료한 뒤에도 실행 중이었다. 상태 비교는 [터미널 로그](evidence/manual-session.log)에 남겼다.
 
@@ -189,7 +221,7 @@ docker ps
 
 `attach`는 주 프로세스의 입출력에 연결하고, `exec`는 별도 프로세스를 실행한다. 컨테이너 수명은 주 프로세스에 달려 있다.
 
-## 바인드 마운트
+### 바인드 마운트
 
 호스트의 `site/index.html`을 수정하자 마운트한 서버의 응답이 바로 바뀌었다. 이미지에 복사한 파일을 쓰는 18080 서버의 응답은 `mount-before`로 남았다.
 
@@ -212,7 +244,7 @@ mount-before
 
 바인드 마운트는 호스트 경로를 컨테이너에 연결한다. `:ro`는 컨테이너의 읽기 전용 접근을 뜻한다. 호스트에서 바꾼 파일은 연결된 경로에 즉시 반영된다.
 
-## 볼륨 영속성
+### 볼륨 영속성
 
 파일을 쓴 컨테이너를 삭제한 뒤 새 컨테이너에서 `persistent-data`를 읽었다. 데이터가 컨테이너의 쓰기 계층 대신 이름 있는 볼륨에 저장된 결과다.
 
@@ -235,7 +267,7 @@ persistent-data
 persistent-data
 ```
 
-## Compose와 환경 변수
+### Compose와 환경 변수
 
 [compose.yaml](compose.yaml)에 빌드, 포트, 환경 변수, 바인드 마운트를 묶었다. 긴 `docker run` 명령 대신 이 파일로 같은 서비스를 실행한다.
 
@@ -251,21 +283,33 @@ HOST_PORT=18083 NGINX_PORT=9090 docker compose down
 
 [터미널 로그](evidence/manual-session.log)에서 기본 포트의 `healthy` 상태와 변경한 포트의 `ok` 응답을 확인할 수 있다. `HOST_PORT`는 호스트 포트, `NGINX_PORT`는 컨테이너 내부 포트를 정한다.
 
-## Git 설정
+### Git 설정과 GitHub 연결
 
-Git은 로컬 변경 이력을 관리하고 GitHub는 원격 저장소와 협업 기능을 제공한다. 이번 작업의 범위는 로컬 Git 설정까지다.
-
-현재 `evidence`에는 Git 설정 결과 파일이 없다. 다음 명령으로 설정한 뒤 이름과 이메일을 마스킹한 결과를 제출 증거로 추가한다.
+사용자 이름·이메일 설정을 확인하고 기본 브랜치를 `main`으로 설정했다. 현재 브랜치도 `main`이다. `git config --list` 결과는 개인정보와 인증 관련 값을 가려 [설정·연결 로그](evidence/git-connection.log)에 기록했다.
 
 ```bash
-git init -b main
-git config --local user.name "본인 이름"
-git config --local user.email "본인 이메일"
 git config --local init.defaultBranch main
-git config --local --list | sed -E 's/^(user\.(name|email))=.*/\1=[REDACTED]/' > evidence/manual-git.log
+git config --list
+git branch --show-current
+git remote -v
+git ls-remote --exit-code origin refs/heads/main
 ```
 
-## 트러블슈팅
+`origin`은 [GitHub 저장소](https://github.com/hsjni0110/codyssey)에 연결되어 있다. 원격 `main` 브랜치의 커밋 조회가 성공했다. 실제 커밋 값은 위 로그에서 확인할 수 있다.
+
+Git은 로컬 변경 이력을 관리하고 GitHub는 원격 저장소와 협업 기능을 제공한다. 공개 저장소의 읽기 성공은 원격 연결 증거다. 로그인 증거는 별도로 필요하다.
+
+#### GitHub 로그인과 저장소 화면
+
+공개 저장소 `hsjni0110/codyssey`, `main` 브랜치, 업로드된 과제 폴더를 확인했다. 사진에는 로그인 계정 메뉴와 저장소 관리 메뉴가 보인다. 브라우저 로그인 증거는 이 사진이며, 로그의 GitHub CLI 미로그인 상태와는 별개다.
+
+![GitHub 로그인 상태와 codyssey 공개 저장소](evidence/github%20연동.png)
+
+#### VSCode 연동 증거
+
+과제의 최종 결과물에는 VSCode에서 GitHub 로그인과 저장소 연동을 완료한 증거도 포함된다. 현재 사진은 GitHub 웹 화면이다. VSCode 계정 메뉴의 GitHub 로그인 상태와 열린 저장소가 함께 보이는 캡처를 추가해야 이 항목까지 충족한다.
+
+## 6) 트러블슈팅
 
 실제 [터미널 로그](evidence/manual-session.log)에 남은 경로 오류 두 건이다.
 
@@ -300,7 +344,7 @@ chmod 755 practice/permissions
 ls -ld practice/permissions
 ```
 
-## 파일 구성
+## 7) 파일 구성
 
 - [Dockerfile](Dockerfile): 커스텀 이미지 빌드
 - [site/index.html](site/index.html): 웹 페이지
