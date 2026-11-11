@@ -23,3 +23,12 @@ class Quiz:
 
     def is_correct(self, selected: int) -> bool:
         return selected == self.answer
+        
+def default_quizzes() -> list[Quiz]:
+    return [
+        Quiz("len([10, 20, 30])의 결과는?", ["2", "3", "4", "30"], 2),
+        Quiz("input()이 반환하는 자료형은?", ["int", "bool", "str", "list"], 3),
+        Quiz("빈 리스트를 만드는 표현은?", ["[]", "{}", "()", '""'], 1),
+        Quiz("7 // 2의 결과는?", ["3.5", "4", "1", "3"], 4),
+        Quiz("함수에서 값을 돌려줄 때 쓰는 키워드는?", ["break", "return", "print", "import"], 2),
+    ]
