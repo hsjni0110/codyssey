@@ -1,623 +1,0 @@
-Script started on Wed Nov 11 11:34:44 2026
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004httail -10 evidance/execution.log[?2004l
-Script started on Wed Nov 11 11:34:44 2026
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004httail -10 evidance/ex[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hcclear[?2004l
-[3J[H[2J[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hppython --version[?2004l
-zsh: command not found: python
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hggit commit -m d d  "docs: readme 추가"[2C[2C[1C[?2004l
-[main a526278] docs: readme 추가
- 1 file changed, 65 insertions(+)
- create mode 100644 quiz-game/README.md
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hggiut  g  g ggit diff --cached -- quiz-game/README.md[?2004l
-[?1h=[K[?1l>[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hggit push origin main                 ggit push origin main[?2004l
-Enumerating objects: 6, done.
-Counting objects:  16% (1/6)Counting objects:  33% (2/6)Counting objects:  50% (3/6)Counting objects:  66% (4/6)Counting objects:  83% (5/6)Counting objects: 100% (6/6)Counting objects: 100% (6/6), done.
-Delta compression using up to 8 threads
-Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
-Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 1.97 KiB | 1.97 MiB/s, done.
-Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
-To https://github.com/hsjni0110/codyssey.git
-   7391603..a526278  main -> main
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hggit status --short[?2004l
- [31mM[m quiz-game/GUIDE.md
-[31m??[m evidance/
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hcclear   c  d d ppython3 3 3 quiz-game/main.py[?2004l
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: 1
-준비 중인 기능입니다.
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: 2
-준비 중인 기능입니다.
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: 3
-준비 중인 기능입니다.
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: 4
-준비 중인 기능입니다.
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: 5
-퀴즈 게임을 종료합니다.
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hpython3 quiz-game/main.pyg  [16D                [16D[8D       ggit add       ggit commit -m "feat: console menu와 숫자 입력 구현 " "[?2004l
-[main 447d7bc] feat: console menu와 숫자 입력 구현
- 1 file changed, 34 insertions(+)
- create mode 100644 quiz-game/main.py
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hi ggit add --   quiz.py[?2004l
-fatal: pathspec 'quiz.py' did not match any files
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hggit commit -m "feat: zui   q  quiz class 작성"[?2004l
-[main bea545d] feat: quiz class 작성
- 1 file changed, 25 insertions(+)
- create mode 100644 quiz-game/quiz.py
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004h[7mPYTHONPATH=quiz-game python3 -c 'from quiz import Quiz; q = Quiz("빈 리스트는?", ["[]", "{}", "()", "0"], 1); q.disp[7ml[7may(); print(q.is_correct(1), q.is_correct(2))'[27m[K[A[27mP[27mY[27mT[27mH[27mO[27mN[27mP[27mA[27mT[27mH[27m=[27mq[27mu[27mi[27mz[27m-[27mg[27ma[27mm[27me[27m [27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27m-[27mc[27m [27m'[27mf[27mr[27mo[27mm[27m [27mq[27mu[27mi[27mz[27m [27mi[27mm[27mp[27mo[27mr[27mt[27m [27mQ[27mu[27mi[27mz[27m;[27m [27mq[27m [27m=[27m [27mQ[27mu[27mi[27mz[27m([27m"[27m빈[27m[27m [27m리[27m[27m스[27m[27m트[27m[27m는[27m[27m?[27m"[27m,[27m [27m[[27m"[27m[[27m][27m"[27m,[27m [27m"[27m{[27m}[27m"[27m,[27m [27m"[27m([27m)[27m"[27m,[27m [27m"[27m0[27m"[27m][27m,[27m [27m1[27m)[27m;[27m [27mq[27m.[27md[27mi[27ms[27mpl[27ma[27my[27m([27m)[27m;[27m [27mp[27mr[27mi[27mn[27mt[27m([27mq[27m.[27mi[27ms[27m_[27mc[27mo[27mr[27mr[27me[27mc[27mt[27m([27m1[27m)[27m,[27m [27mq[27m.[27mi[27ms[27m_[27mc[27mo[27mr[27mr[27me[27mc[27mt[27m([27m2[27m)[27m)[27m'[?2004l
-빈 리스트는?
-  1. []
-  2. {}
-  3. ()
-  4. 0
-True False
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hi c c cclear[?2004l
-[3J[H[2J[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hㅎ  ㅎ  g g g f f ggit commit -m " "  "feat: python 기초 문제 추가"[?2004l
-[main 8eda05a] feat: python 기초 문제 추가
- 1 file changed, 10 insertions(+), 1 deletion(-)
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004heede  d ppython3 quiz--g   - -game/main.py[?2004l
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: 1
-퀴즈 풀기 준비 중입니다.
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: 2
-퀴즈 추가 준비 중입니다.
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: 3
-퀴즈 목록 준비 중입니다.
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: 4
-점수 확인 준비 중입니다.
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: 5
-퀴즈 게임을 종료합니다.
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: 5
-퀴즈 게임을 종료합니다.
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hpython3 quiz-game/main.py[?2004l
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: 1
-퀴즈 풀기 준비 중입니다.
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: 2
-퀴즈 추가 준비 중입니다.
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: 3
-퀴즈 목록 준비 중입니다.
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: 4
-점수 확인 준비 중입니다.
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: 5
-퀴즈 게임을 종료합니다.
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004h6 gggg  ggit add       g ggit commit -m "refactor : quiz ame에     g   game에 메뉴와 문제 목ㄹㄱ      ㅁ   목ㄹ    ㅁ   ㅁ   ㅁ  ㅁ   목록 모으기"[?2004l
-[main dcdfe99] refactor: quiz game에 메뉴와 문제 목록 모으기
- 2 files changed, 52 insertions(+), 7 deletions(-)
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hㅑㅑ    ggit statusd d  s --short[?2004l
- [31mM[m quiz-game/GUIDE.md
- [31mM[m quiz-game/main.py
-[31m??[m evidance/
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hggit check     c  checkout -b feature/quiz-play[?2004l
-Switched to a new branch 'feature/quiz-play'
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hu ppython3 quiz-game/main.py[?2004l
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: 1
-
-[문제 1]
-len([10, 20, 30])의 결과는?
-  1. 2
-  2. 3
-  3. 4
-  4. 30
-정답 번호 (1~4): 2
-정답입니다!
-
-[문제 2]
-input()이 반환하는 자료형은?
-  1. int
-  2. bool
-  3. str
-  4. list
-정답 번호 (1~4): 3
-정답입니다!
-
-[문제 3]
-빈 리스트를 만드는 표현은?
-  1. []
-  2. {}
-  3. ()
-  4. ""
-정답 번호 (1~4): 1
-정답입니다!
-
-[문제 4]
-7 // 2의 결과는?
-  1. 3.5
-  2. 4
-  3. 1
-  4. 3
-정답 번호 (1~4): 4
-정답입니다!
-
-[문제 5]
-함수에서 값을 돌려줄 때 쓰는 키워드는?
-  1. break
-  2. return
-  3. print
-  4. import
-정답 번호 (1~4): 2
-정답입니다!
-
-결과: 5문제 중 5문제 정답
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: 5
-퀴즈 게임을 종료합니다.
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hg g ggit add       g g d d ggit add      ggit commit -m  "feat: 퀴즈 출제와 채점 구현"[?2004l
-[feature/quiz-play 4f4d40f] feat: 퀴즈 출제와 채점 구현
- 1 file changed, 17 insertions(+), 14 deletions(-)
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hggit checkout main[?2004l
-M	quiz-game/GUIDE.md
-Switched to branch 'main'
-Your branch is ahead of 'origin/main' by 4 commits.
-  (use "git push" to publish your local commits)
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hggie  g  g g ggit merge --no-ff feature/quiz-play -m "merge: 퀴즈 풀기 r  기능 병ㅎ    ㅂ   병합"[?2004l
-Merge made by the 'ort' strategy.
- quiz-game/main.py | 31 [32m+++++++++++++++++[m[31m--------------[m
- 1 file changed, 17 insertions(+), 14 deletions(-)
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hㅎ  ggit log --oneline --graph --all -10[?2004l
-[?1h=*   [33m7a6433b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m merge: 퀴즈 풀기 기능 병합[m
-[31m|[m[32m\[m  [m
-[31m|[m * [33m4f4d40f[m[33m ([m[1;32mfeature/quiz-play[m[33m)[m feat: 퀴즈 출제와 채점 구현[m
-[31m|[m[31m/[m  [m
-* [33mdcdfe99[m refactor: quiz game에 메뉴와 문제 목록 모으기[m
-* [33m8eda05a[m feat: python 기초 문제 추가[m
-* [33mbea545d[m feat: quiz class 작성[m
-* [33m447d7bc[m feat: console menu와 숫자 입력 구현[m
-* [33ma526278[m[33m ([m[1;31morigin/main[m[33m)[m docs: readme 추가[m
-* [33m7391603[m chore: 프로젝트 초기화와 README 목차 추가[m
-* [33m4e746c3[m feat : 연동 화면 증명[m
-* [33mb0bfda4[m fix : 증거파일 업데이트[m
-[K[?1l>[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hd ppython3 quiz-game- /main.py[?2004l
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: 2
-문제: e 딕셔너리에서 값을 찾는ㄷ  ㄷ     데 쓰는 것은?
-선택지 1: 인덱스
-선택지 2: 키
-선택지 3: 줄 번호
-선택지 4: 파일명
-정답 번호 (1~4): 2
-퀴즈를 추가했습니다.
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: 1
-
-[문제 1]
-len([10, 20, 30])의 결과는?
-  1. 2
-  2. 3
-  3. 4
-  4. 30
-정답 번호 (1~4): 2
-정답입니다!
-
-[문제 2]
-input()이 반환하는 자료형은?
-  1. int
-  2. bool
-  3. str
-  4. list
-정답 번호 (1~4): 1
-오답입니다. 정답은 3번입니다.
-
-[문제 3]
-빈 리스트를 만드는 표현은?
-  1. []
-  2. {}
-  3. ()
-  4. ""
-정답 번호 (1~4): 3
-오답입니다. 정답은 1번입니다.
-
-[문제 4]
-7 // 2의 결과는?
-  1. 3.5
-  2. 4
-  3. 1
-  4. 3
-정답 번호 (1~4): 4
-정답입니다!
-
-[문제 5]
-함수에서 값을 돌려줄 때 쓰는 키워드는?
-  1. break
-  2. return
-  3. print
-  4. import
-정답 번호 (1~4): 5
-1~4 사이의 숫자를 입력하세요.
-정답 번호 (1~4): 2
-정답입니다!
-
-[문제 6]
-딕셔너리에서 값을  데 쓰는 것은?
-  1. 인덱스
-  2. 키
-  3. 줄 번호
-  4. 파일명
-정답 번호 (1~4): 2
-정답입니다!
-
-결과: 6문제 중 4문제 정답
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: ㅎ 5
-퀴즈 게임을 종료합니다.
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hc c cclear[?2004l
-[3J[H[2J[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hg g ggit commit -m            ggit ad  c  g  g ggit commit -m "feat: 문제와 선택지를 받아 ㅊ  ㅊ   퀴즈 추가하는 기능"[?2004l
-[main 627b379] feat: 문제와 선택지를 받아 퀴즈 추가하는 기능
- 1 file changed, 14 insertions(+), 2 deletions(-)
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hi ppyton   t p  d ppython3 quiz-game/main.py[?2004l
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: 3
-
-등록된 퀴즈 목록 (총 5개)
-1. len([10, 20, 30])의 결과는?
-2. input()이 반환하는 자료형은?
-3. 빈 리스트를 만드는 표현은?
-4. 7 // 2의 결과는?
-5. 함수에서 값을 돌려줄 때 쓰는 키워드는?
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: c c 
-1~5 사이의 숫자를 입력하세요.
-선택: 5
-퀴즈 게임을 종료합니다.
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hcclear[?2004l
-[3J[H[2J[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hggit add      g g g g g g g g g g g g g g g g g g ㅎ  g g g g g g ggit comm       ggit commitg g  -m "feat: 퀴즈 목록 과 문제 수 출력"[?2004l
-[main c2a9809] feat: 퀴즈 목록과 문제 수 출력
- 1 file changed, 7 insertions(+), 1 deletion(-)
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hc c ggit  g  d d d ggit commit -m " "  "feat: 최고 정답 수ㅇ  ㄱ     수 갱신과 조회 구현"[?2004l
-[main 10b4907] feat: 최고 정답 수 갱신과 조회 구현
- 1 file changed, 8 insertions(+), 1 deletion(-)
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hi ppython3 quiz-game/main.py[?2004l
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: 2
-문제: ㅁㅊ  ㅊ 취업하는ㅂ     는 방법은?
-선택지 1: 대한민국을 뜬다
-선택지 2: 컴공을 뜬다
-선택지 3: 청소부가 된다
-선택지 4: 배관공이 된다. 
-정답 번호 (1~4): 2
-퀴즈를 추가하고 저장했습니다.
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: 1
-
-[문제 1]
-len([10, 20, 30])의 결과는?
-  1. 2
-  2. 3
-  3. 4
-  4. 30
-정답 번호 (1~4): 2
-정답입니다!
-
-[문제 2]
-input()이 반환하는 자료형은?
-  1. int
-  2. bool
-  3. str
-  4. list
-정답 번호 (1~4): 3
-정답입니다!
-
-[문제 3]
-빈 리스트를 만드는 표현은?
-  1. []
-  2. {}
-  3. ()
-  4. ""
-정답 번호 (1~4): 
-1~4 사이의 숫자를 입력하세요.
-정답 번호 (1~4): 1
-정답입니다!
-
-[문제 4]
-7 // 2의 결과는?
-  1. 3.5
-  2. 4
-  3. 1
-  4. 3
-정답 번호 (1~4): 4
-정답입니다!
-
-[문제 5]
-함수에서 값을 돌려줄 때 쓰는 키워드는?
-  1. break
-  2. return
-  3. print
-  4. import
-정답 번호 (1~4): 1
-오답입니다. 정답은 2번입니다.
-
-[문제 6]
-취업는 방법은?
-  1. 대한민국을 뜬다
-  2. 컴공을 뜬다
-  3. 청소부가 된다
-  4. 배관공이 된다
-정답 번호 (1~4): 2
-정답입니다!
-
-결과: 6문제 중 5문제 정답
-새 최고 기록입니다!
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: 5
-퀴즈 게임을 종료합니다.
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004h[7mpython3 -m json.tool --no-ensure-ascii quiz-game/state.json`[27m[60D[27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27m-[27mm[27m [27mj[27ms[27mo[27mn[27m.[27mt[27mo[27mo[27ml[27m [27m-[27m-[27mn[27mo[27m-[27me[27mn[27ms[27mu[27mr[27me[27m-[27ma[27ms[27mc[27mi[27mi[27m [27mq[27mu[27mi[27mz[27m-[27mg[27ma[27mm[27me[27m/[27ms[27mt[27ma[27mt[27me[27m.[27mj[27ms[27mo[27mn[27m` [?2004l
-{
-    [1m"quizzes"[0m: [
-        {
-            [1m"question"[0m: [32m"len([10, 20, 30])의 결과는?"[0m,
-            [1m"choices"[0m: [
-                [32m"2"[0m,
-                [32m"3"[0m,
-                [32m"4"[0m,
-                [32m"30"[0m
-            ],
-            [1m"answer"[0m: [33m2[0m
-        },
-        {
-            [1m"question"[0m: [32m"input()이 반환하는 자료형은?"[0m,
-            [1m"choices"[0m: [
-                [32m"int"[0m,
-                [32m"bool"[0m,
-                [32m"str"[0m,
-                [32m"list"[0m
-            ],
-            [1m"answer"[0m: [33m3[0m
-        },
-        {
-            [1m"question"[0m: [32m"빈 리스트를 만드는 표현은?"[0m,
-            [1m"choices"[0m: [
-                [32m"[]"[0m,
-                [32m"{}"[0m,
-                [32m"()"[0m,
-                [32m"\"\""[0m
-            ],
-            [1m"answer"[0m: [33m1[0m
-        },
-        {
-            [1m"question"[0m: [32m"7 // 2의 결과는?"[0m,
-            [1m"choices"[0m: [
-                [32m"3.5"[0m,
-                [32m"4"[0m,
-                [32m"1"[0m,
-                [32m"3"[0m
-            ],
-            [1m"answer"[0m: [33m4[0m
-        },
-        {
-            [1m"question"[0m: [32m"함수에서 값을 돌려줄 때 쓰는 키워드는?"[0m,
-            [1m"choices"[0m: [
-                [32m"break"[0m,
-                [32m"return"[0m,
-                [32m"print"[0m,
-                [32m"import"[0m
-            ],
-            [1m"answer"[0m: [33m2[0m
-        },
-        {
-            [1m"question"[0m: [32m"취업는 방법은?"[0m,
-            [1m"choices"[0m: [
-                [32m"대한민국을 뜬다"[0m,
-                [32m"컴공을 뜬다"[0m,
-                [32m"청소부가 된다"[0m,
-                [32m"배관공이 된다"[0m
-            ],
-            [1m"answer"[0m: [33m2[0m
-        }
-    ],
-    [1m"best_score"[0m: [33m5[0m
-}
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004h[7mpython3 quiz-game/main.py < /dev/null`[27m[38D[27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27mq[27mu[27mi[27mz[27m-[27mg[27ma[27mm[27me[27m/[27mm[27ma[27mi[27mn[27m.[27mp[27my[27m [27m<[27m [27m/[27md[27me[27mv[27m/[27mn[27mu[27ml[27ml[27m` [?2004l
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: 
-입력이 종료되었습니다.
-퀴즈 게임을 종료합니다.
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004h[7mquiz_backup_dir="$(mktemp -d)"[27m[30D[27mq[27mu[27mi[27mz[27m_[27mb[27ma[27mc[27mk[27mu[27mp[27m_[27md[27mi[27mr[27m=[27m"[27m$[27m([27mm[27mk[27mt[27me[27mm[27mp[27m [27m-[27md[27m)[27m"[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004h[7mcp quiz-game/state.json "$quiz_backup_dir/state.json"[27m[53D[27mc[27mp[27m [27mq[27mu[27mi[27mz[27m-[27mg[27ma[27mm[27me[27m/[27ms[27mt[27ma[27mt[27me[27m.[27mj[27ms[27mo[27mn[27m [27m"[27m$[27mq[27mu[27mi[27mz[27m_[27mb[27ma[27mc[27mk[27mu[27mp[27m_[27md[27mi[27mr[27m/[27ms[27mt[27ma[27mt[27me[27m.[27mj[27ms[27mo[27mn[27m"[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004h[7mprintf '{' > quiz-game/state.json[27m[33D[27mp[27mr[27mi[27mn[27mt[27mf[27m [27m'[27m{[27m'[27m [27m>[27m [27mq[27mu[27mi[27mz[27m-[27mg[27ma[27mm[27me[27m/[27ms[27mt[27ma[27mt[27me[27m.[27mj[27ms[27mo[27mn[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004h[7mpython3 quiz-game/main.py[27m[25D[27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27mq[27mu[27mi[27mz[27m-[27mg[27ma[27mm[27me[27m/[27mm[27ma[27mi[27mn[27m.[27mp[27my[?2004l
-state.json이 손상되었습니다. 기본 퀴즈로 복구합니다.
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: 5
-퀴즈 게임을 종료합니다.
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004h[7mprintf '%s\n' '{"quizzes":[],"best_score":null}' > quiz-game/state.json[27m[71D[27mp[27mr[27mi[27mn[27mt[27mf[27m [27m'[27m%[27ms[27m\[27mn[27m'[27m [27m'[27m{[27m"[27mq[27mu[27mi[27mz[27mz[27me[27ms[27m"[27m:[27m[[27m][27m,[27m"[27mb[27me[27ms[27mt[27m_[27ms[27mc[27mo[27mr[27me[27m"[27m:[27mn[27mu[27ml[27ml[27m}[27m'[27m [27m>[27m [27mq[27mu[27mi[27mz[27m-[27mg[27ma[27mm[27me[27m/[27ms[27mt[27ma[27mt[27me[27m.[27mj[27ms[27mo[27mn[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004h[7mpython3 quiz-game/main.py[27m[25D[27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27mq[27mu[27mi[27mz[27m-[27mg[27ma[27mm[27me[27m/[27mm[27ma[27mi[27mn[27m.[27mp[27my[?2004l
-
-=== Python 기초 퀴즈 ===
-1. 퀴즈 풀기
-2. 퀴즈 추가
-3. 퀴즈 목록
-4. 점수 확인
-5. 종료
-선택: 5
-퀴즈 게임을 종료합니다.
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004h[7mcp "$quiz_backup_dir/state.json" quiz-game/state.json[27m[53D[27mc[27mp[27m [27m"[27m$[27mq[27mu[27mi[27mz[27m_[27mb[27ma[27mc[27mk[27mu[27mp[27m_[27md[27mi[27mr[27m/[27ms[27mt[27ma[27mt[27me[27m.[27mj[27ms[27mo[27mn[27m"[27m [27mq[27mu[27mi[27mz[27m-[27mg[27ma[27mm[27me[27m/[27ms[27mt[27ma[27mt[27me[27m.[27mj[27ms[27mo[27mn[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004h[7mgit check-ignore quiz-game/state.json[27m[37D[27mg[27mi[27mt[27m [27mc[27mh[27me[27mc[27mk[27m-[27mi[27mg[27mn[27mo[27mr[27me[27m [27mq[27mu[27mi[27mz[27m-[27mg[27ma[27mm[27me[27m/[27ms[27mt[27ma[27mt[27me[27m.[27mj[27ms[27mo[27mn[?2004l
-quiz-game/state.json
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hg g ggit commit -m "feat: utf-8 sj  s  json 저장과 복구 ㄱ  ㄱ   구현"[?2004l
-[main 3e33d8e] feat: utf-8 json 저장과 복구 구현
- 2 files changed, 78 insertions(+), 1 deletion(-)
-[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004hㄷ  e ㅊ  ㅊ  cclear[?2004l
-[3J[H[2J[1m[7m%[27m[1m[0m                                                                                                                                                                   [0m[27m[24m[Jhanseokjin@hanseogjin-ui-MacBookAir codyssey % [K[?2004heexit[?2004l
-
-Script done on Wed Nov 11 14:30:39 2026
