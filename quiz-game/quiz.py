@@ -23,6 +23,13 @@ class Quiz:
     def is_correct(self, selected: int) -> bool:
         return selected == self.answer
 
+    def to_dict(self) -> dict:
+        return {
+            "question": self.question,
+            "choices": self.choices,
+            "answer": self.answer,
+        }
+        
 def default_quizzes() -> list[Quiz]:
     return [
         Quiz("len([10, 20, 30])의 결과는?", ["2", "3", "4", "30"], 2),
