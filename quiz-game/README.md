@@ -17,8 +17,6 @@ python3 --version
 python3 main.py
 ```
 
-빈 폴더에서 직접 구현하려면 [단계별 실습 가이드](GUIDE.md)를 따라갑니다.
-
 ## 기능 목록
 
 | 메뉴 | 기능 |
