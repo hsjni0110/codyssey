@@ -1,4 +1,3 @@
-
 class Quiz:
     """문제 하나와 선택지, 정답을 관리한다."""
 
@@ -23,7 +22,7 @@ class Quiz:
 
     def is_correct(self, selected: int) -> bool:
         return selected == self.answer
-        
+
 def default_quizzes() -> list[Quiz]:
     return [
         Quiz("len([10, 20, 30])의 결과는?", ["2", "3", "4", "30"], 2),
